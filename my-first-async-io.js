@@ -12,14 +12,4 @@ function logLines() {
   console.log(lines)
 }
 
-function magicNumber() {
-  var number = +process.argv[3]
-  if (lines >= number){
-    console.log('This file has '+number+ ' or more lines')
-  } else {
-    console.log('This file does not have '+number+' or more lines')
-  }
-}
-
 getLines(logLines)
-getLines(magicNumber)
